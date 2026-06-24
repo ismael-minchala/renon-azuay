@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDITAR: Título del reporte -->
+  <title>Título del Reporte — ReNoN-Azuay</title>
+  <meta name="description" content="Descripción breve del reporte (máx 150 caracteres).">
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .post-container { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    .post-header { margin-bottom: 40px; }
+    .post-back { font-size: 0.85rem; color: var(--text-light); display: block; margin-bottom: 24px; }
+    .post-back:hover { color: var(--blue); }
+    .post-meta { font-size: 0.85rem; color: var(--text-light); margin-bottom: 12px; display: flex; gap: 20px; flex-wrap: wrap; }
+    .post-title { font-size: 1.8rem; line-height: 1.3; margin-bottom: 20px; color: var(--text); }
+    .post-authors { font-size: 0.9rem; color: var(--text-light); }
+    .post-divider { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    .post-body h2 { font-size: 1.3rem; color: var(--blue); margin: 32px 0 12px; }
+    .post-body h3 { font-size: 1.1rem; margin: 24px 0 8px; }
+    .post-body p { color: var(--text); margin-bottom: 16px; }
+    .post-body ul, .post-body ol { padding-left: 24px; margin-bottom: 16px; color: var(--text); }
+    .post-body li { margin-bottom: 6px; }
+    .post-body table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 0.9rem; }
+    .post-body th { background: var(--blue-light); color: var(--blue); padding: 8px 12px; text-align: left; font-size: 0.85rem; }
+    .post-body td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+    .post-body tr:hover td { background: var(--bg); }
+    .callout { background: var(--green-light); border-left: 4px solid var(--green); border-radius: 0 var(--radius) var(--radius) 0; padding: 14px 18px; margin-bottom: 20px; font-size: 0.9rem; }
+    .callout strong { color: var(--green); }
+    .download-btn { display: inline-block; background: var(--blue); color: white; padding: 10px 24px; border-radius: var(--radius); font-size: 0.9rem; font-weight: 600; margin-top: 12px; }
+    .download-btn:hover { background: var(--blue-dark); color: white; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <div class="nav-brand">
+      <span>ReNoN<strong>Azuay</strong></span>
+      <span class="tag">UCuenca · DEET</span>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html#inicio">Inicio</a>
+      <a href="../index.html#proyecto">Proyecto</a>
+      <a href="../index.html#equipo">Equipo</a>
+      <a href="../index.html#reportes">Reportes</a>
+      <a href="../index.html#publicaciones">Publicaciones</a>
+      <a href="../index.html#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<div class="post-container">
+
+  <div class="post-header">
+    <a href="../index.html#reportes" class="post-back">← Volver a reportes</a>
+
+    <!-- EDITAR: metadatos del reporte -->
+    <div class="post-meta">
+      <span>📅 DD de Mes de AAAA</span>
+      <span>🏷️ PT1 · Datos</span>  <!-- Cambiar a PT1, PT2, PT3 o PT4 según corresponda -->
+      <span>⏱️ X min de lectura</span>
+    </div>
+
+    <!-- EDITAR: título del reporte -->
+    <h1 class="post-title">Título completo del reporte técnico aquí</h1>
+
+    <!-- EDITAR: autores -->
+    <div class="post-authors">
+      <strong>Autores:</strong> Luis Ismael Minchala, [Nombre Apellido], [Nombre Apellido] ·
+      <strong>Grupo:</strong> GIEEC – DEET, Universidad de Cuenca
+    </div>
+
+    <!-- Enlace a descarga PDF (cuando esté disponible) -->
+    <!--
+    <a href="../assets/reportes/nombre-reporte.pdf" class="download-btn">⬇ Descargar PDF</a>
+    -->
+  </div>
+
+  <hr class="post-divider">
+
+  <!-- ── CUERPO DEL REPORTE ── -->
+  <div class="post-body">
+
+    <!-- 1. RESUMEN -->
+    <h2>Resumen</h2>
+    <div class="callout">
+      <strong>Hallazgo principal:</strong> Escribir aquí el mensaje clave del reporte en 1-2 oraciones. Esto es lo primero que leerán los visitantes.
+    </div>
+    <p>Párrafo de resumen del reporte (150-200 palabras). Describir qué se analizó, cómo y cuáles son las conclusiones principales.</p>
+
+    <!-- 2. INTRODUCCIÓN -->
+    <h2>1. Introducción</h2>
+    <p>Contexto y motivación del análisis.</p>
+
+    <!-- 3. METODOLOGÍA -->
+    <h2>2. Metodología</h2>
+    <p>Descripción de las fuentes de datos y métodos utilizados.</p>
+
+    <h3>2.1 Fuentes de datos</h3>
+    <ul>
+      <li>CENTROSUR: datos de generación y demanda 2003-2024</li>
+      <li>ARCERNNR: balance energético nacional</li>
+      <!-- agregar más según corresponda -->
+    </ul>
+
+    <!-- 4. RESULTADOS -->
+    <h2>3. Resultados</h2>
+    <p>Presentar los resultados con tablas y gráficas. Las imágenes se colocan como:</p>
+    <!-- <img src="../assets/img/nombre-figura.png" alt="Descripción de la figura"> -->
+
+    <!-- Ejemplo de tabla -->
+    <table>
+      <thead>
+        <tr>
+          <th>Variable</th>
+          <th>2010</th>
+          <th>2015</th>
+          <th>2020</th>
+          <th>2024</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Generación total (GWh)</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 5. CONCLUSIONES -->
+    <h2>4. Conclusiones</h2>
+    <p>Conclusiones principales y recomendaciones.</p>
+
+    <!-- 6. DATOS ABIERTOS -->
+    <h2>5. Datos abiertos</h2>
+    <p>Los datos utilizados en este reporte están disponibles en:</p>
+    <ul>
+      <li>📦 <a href="https://github.com/renon-azuay" target="_blank">Repositorio GitHub del proyecto</a> — carpeta <code>data/</code></li>
+      <!-- agregar DOI de Zenodo si aplica -->
+    </ul>
+
+    <!-- 6. CÓMO CITAR -->
+    <h2>Cómo citar</h2>
+    <p style="background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; font-size: 0.85rem; font-family: monospace;">
+      Minchala, L. I., [Apellido], [I]., & [Apellido], [I]. (AAAA). <em>Título del reporte</em>. Proyecto ReNoN-Azuay, DEET – Universidad de Cuenca. Recuperado de: [URL]
+    </p>
+
+  </div>
+  <!-- FIN CUERPO DEL REPORTE -->
+
+</div>
+
+<footer>
+  <div class="container">
+    <p><strong>Proyecto ReNoN-Azuay</strong> · DEET – Universidad de Cuenca</p>
+    <div class="footer-links">
+      <a href="../index.html">Inicio</a>
+      <a href="https://github.com/renon-azuay" target="_blank">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

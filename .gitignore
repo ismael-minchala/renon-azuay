@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+**/.DS_Store
+._*
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+# MATLAB / Simulink
+*.asv
+*.m~
+*.slxc
+
+slprj/
+
+# LaTeX
+*.aux
+*.log
+*.out
+
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+# Jupyter
+.ipynb_checkpoints/
+
+# Datos crudos (muy pesados, compartir por otro medio)
+data/raw/
+
+# Archivos de simulación compilados
+*.mex*
+*.p
