@@ -8,7 +8,7 @@ y movilidad eléctrica en la provincia del Azuay, Ecuador.
 - **Institución:** DEET – Universidad de Cuenca
 - **Período:** Marzo 2026 – Febrero 2028
 - **Financiamiento:** VIUC – XXII Concurso Universitario de Proyectos de Investigación
-- **Sitio web:** [renon-azuay.github.io](https://[tu-usuario].github.io/renon-azuay)
+- **Sitio web:** [https://ismael-minchala.github.io/renon-azuay/]
 
 ## Estructura del repositorio
 
