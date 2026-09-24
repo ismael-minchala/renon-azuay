@@ -8,7 +8,7 @@ y movilidad eléctrica en la provincia del Azuay, Ecuador.
 - **Institución:** DEET – Universidad de Cuenca
 - **Período:** Marzo 2026 – Febrero 2028
 - **Financiamiento:** VIUC – XXII Concurso Universitario de Proyectos de Investigación
-- **Sitio web:** [https://ismael-minchala.github.io/renon-azuay/]
+- **Sitio web:** https://ismael-minchala.github.io/renon-azuay/
 
 ## Estructura del repositorio
 
@@ -28,7 +28,7 @@ y movilidad eléctrica en la provincia del Azuay, Ecuador.
 | Investigador 1 | Martín Ortega |
 | Investigador 2 | Paúl Arévalo |
 | Técnico | Brian Loza |
-| Ayudante | Pablo Cárdenas |
+| Ayudante | Santiago Matías Ordóñez Carpio (desde sep 2026; anteriormente Pablo Cárdenas, mar–ago 2026) |
 
 ## Contacto
 

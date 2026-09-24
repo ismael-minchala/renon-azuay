@@ -12,7 +12,7 @@
 | **INV1** | Martín Ortega | ~5 h/semana | — |
 | **INV2** | Paúl Arévalo | ~5 h/semana | — |
 | **TINV** | Brian Loza | ~40 h/semana (tiempo completo) | — |
-| **AI** | Pablo Cárdenas | ~10 h/semana (medio tiempo) | — |
+| **AI** | Santiago Matías Ordóñez Carpio (desde sep 2026) | ~10 h/semana (medio tiempo) | — |
 
 ---
 
@@ -56,7 +56,8 @@
 - **Redacta los borradores de los Reportes 1 y 2** (PT1); revisión posterior de INV2 y DP.
 - **Co-lidera el repositorio de documentación bibliográfica** (Zotero + `references/` GitHub) junto a INV1.
 
-### AI — Pablo Cárdenas (Ayudante de Investigación)
+### AI — Santiago Matías Ordóñez Carpio (Ayudante de Investigación)
+> Estudiante de Telecomunicaciones. Seleccionado en la convocatoria de septiembre 2026 (acta en `ejecucion/contratos/ayudantes/Sep26/`). Sustituye a **Pablo Cárdenas Regalado**, ayudante durante marzo – agosto 2026.
 - Apoyo en recopilación, limpieza y análisis de datos.
 - Participa en: Act. 1.1, 1.3, 2.1, 3.1, 3.2, 4.1.
 - Apoya la gestión del sitio web y publicación de reportes.
@@ -88,5 +89,5 @@
 
 ## Nota sobre contratos vigentes
 - **TINV** (Brian Loza): Contrato de servicios profesionales — ver `ejecucion/contratos/tecnico/2026_BL/`
-- **AI** (Pablo Cárdenas): Acta de ayudante de investigación — ver `ejecucion/contratos/ayudantes/`
+- **AI** (Santiago Ordóñez): Acta de ayudante de investigación — ver `ejecucion/contratos/ayudantes/Sep26/` (período anterior, Pablo Cárdenas: `ejecucion/contratos/ayudantes/Mar26/`)
 - **DP, INV1, INV2**: Horas distributivas en cronograma valorado — ver `legal/RENON_FORMATO CRONOGRAMA VALORADO XXII CONVOCATORIA INTERNA.xlsx`

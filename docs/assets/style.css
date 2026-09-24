@@ -637,3 +637,42 @@ footer .footer-links { margin-top: 14px; display: flex; justify-content: center;
   .dates-grid { grid-template-columns: 1fr 1fr; }
   .about-stats { grid-template-columns: 1fr 1fr; }
 }
+
+/* ── Ajustes sep 2026 ── */
+.status-progress { background: #E3F2FD; color: #0D47A1; }
+.avatar-initials {
+  display: flex; align-items: center; justify-content: center;
+  background: var(--uc-blue); color: #FFFFFF;
+  font-weight: 700; font-size: 1.7rem; letter-spacing: 1px;
+}
+.team-note {
+  margin-top: 28px; text-align: center;
+  font-size: 0.85rem; color: var(--text-light);
+}
+
+/* Tarjetas de reportes técnicos */
+.blog-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--uc-blue-mid);
+  display: flex; flex-direction: column; gap: 12px;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.blog-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.blog-card-header h3 { font-size: 1.02rem; color: var(--uc-blue); margin-top: 10px; line-height: 1.35; }
+.blog-tag {
+  display: inline-block;
+  background: var(--green-light); color: var(--green);
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  padding: 3px 12px; border-radius: 999px;
+}
+.blog-card p { font-size: 0.88rem; color: var(--text-light); flex: 1; }
+.blog-card-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.82rem; color: var(--text-light);
+  border-top: 1px solid #E6ECF4; padding-top: 12px;
+}
+.blog-card-footer a { color: var(--green); font-weight: 700; text-decoration: none; }
+.blog-card-footer a:hover { text-decoration: underline; }
