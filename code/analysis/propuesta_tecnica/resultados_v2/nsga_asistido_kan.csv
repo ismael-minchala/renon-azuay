@@ -1,0 +1,3 @@
+Metodo,Evaluaciones_reales,Tiempo_total_s,Hipervolumen
+NSGA-II completo,2928,6.08248141666667,1001.45198181574
+NSGA-II asistido KAN,648,29.8620955416667,948.419312571229

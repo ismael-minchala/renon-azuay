@@ -33,3 +33,11 @@ data/raw/
 # Archivos de simulación compilados
 *.mex*
 *.p
+
+# Modelo multivectorial: los .mat se regeneran con reproduce_report_v1/v2 (los CSV son la referencia)
+code/analysis/propuesta_tecnica/resultados/*.mat
+code/analysis/propuesta_tecnica/resultados_v2/*.mat
+# LaTeX
+*.toc
+*.lof
+*.lot
