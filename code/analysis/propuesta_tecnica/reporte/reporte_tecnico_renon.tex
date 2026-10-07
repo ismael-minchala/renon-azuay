@@ -165,7 +165,7 @@ instancia, con la t\'ermica local. La energ\'ia no suministrada (ENS) se penaliz
 costo de racionamiento (VoLL) de 10\,000~USD/MWh.
 
 \subsection{Optimizaci\'on multiobjetivo}
-Siguiendo a~\cite{viesi2020}, la identificaci\'on de escenarios \'optimos se formula como
+Siguiendo a~\cite{viesi2020,mahbub2016}, la identificaci\'on de escenarios \'optimos se formula como
 un problema de optimizaci\'on multiobjetivo resuelto con NSGA-II (cruce SBX con
 probabilidad 0,9; mutaci\'on polinomial con probabilidad $1/n_{\mathrm{var}}$;
 poblaci\'on 48; 60 generaciones). El vector de decisi\'on es
@@ -225,7 +225,7 @@ Costos    & FV / e\'olica / mini-hidro & 750 / 1300 / 2200 USD/kW & anualizado 6
 \section{Implementaci\'on en MATLAB}
 %---------------------------------------------------------------------
 La herramienta se implement\'o en MATLAB puro (sin \emph{toolboxes}), organizada en cinco
-m\'odulos en \texttt{propuesta\_tecnica/matlab/}:
+m\'odulos en \texttt{code/analysis/propuesta\_tecnica/matlab/} del repositorio del proyecto:
 
 \begin{itemize}[leftmargin=1.4em]
   \item \texttt{renon\_params.m}: par\'ametros del sistema por escenario
@@ -239,7 +239,7 @@ m\'odulos en \texttt{propuesta\_tecnica/matlab/}:
   aglomeraci\'on, SBX, mutaci\'on polinomial).
   \item \texttt{main\_renon.m}: flujo completo (l\'inea base, verificaci\'on,
   optimizaci\'on 2030/2050, estr\'es de sequ\'ia, Monte Carlo, exportaci\'on de figuras
-  y tablas CSV). Tiempo total de ejecuci\'on: $\approx13$~s en un equipo de escritorio,
+  y tablas CSV). Tiempo total de ejecuci\'on del orden de 15~s en un equipo de escritorio,
   lo que habilita los barridos masivos tipo Monte Carlo previstos para el
   supercomputador del DEET.
 \end{itemize}
@@ -329,7 +329,7 @@ Demanda total (GWh)            & 1314 & 1623 & 2683 \\
 Hallazgos principales, alineados con las ``indicaciones optimizadas''
 de~\cite{viesi2020}:
 \begin{enumerate}[leftmargin=1.6em]
-  \item \textbf{El acoplamiento sectorial sustituye almacenamiento}: el optimizador
+  \item \textbf{El acoplamiento sectorial sustituye almacenamiento}~\cite{lund2016}: el optimizador
   privilegia la flexibilidad de demanda (84--100\% de carga inteligente de VE; bombeo
   diferible en 2030) sobre las bater\'ias, que solo aparecen marginalmente en 2050
   (45~MWh). La gesti\'on inteligente de las cargas de agua y movilidad provee la
@@ -338,7 +338,7 @@ de~\cite{viesi2020}:
   \item \textbf{La FV es la tecnolog\'ia dominante de expansi\'on} (255~MW en 2030;
   580~MW en 2050), complementada por e\'olica en el l\'imite del recurso asumido: su
   perfil nocturno-vespertino complementa a la FV durante el pico de demanda.
-  \item \textbf{La electrificaci\'on del transporte es el mayor palanca de
+  \item \textbf{La electrificaci\'on del transporte es la mayor palanca de
   descarbonizaci\'on}: en 2050 las emisiones del transporte caen de 354 a 45~kt. El
   aumento de demanda el\'ectrica asociado ($+317$~GWh) se absorbe con renovables locales
   gracias a la carga inteligente.
@@ -492,17 +492,20 @@ potencia nominal y efectiva 2003--2022,'' Universidad de Cuenca, rev.\ IMA,
 \bibitem{mahbub2016} M.~S.~Mahbub, M.~Cozzini, P.~A.~{\O}stergaard y F.~Alberti,
 ``Combining multi-objective evolutionary algorithms and descriptive analytical
 modelling in energy scenario design,'' \emph{Applied Energy}, vol.~164, pp.~140--151,
-2016.
+2016. doi:10.1016/j.apenergy.2015.11.042.
 
-\bibitem{lund2017} H.~Lund \emph{et~al.}, ``Energy Storage and Smart Energy Systems,''
-\emph{Int.\ J.\ of Sustainable Energy Planning and Management}, vol.~11, pp.~3--14,
-2016.
+\bibitem{lund2016} H.~Lund, P.~A.~{\O}stergaard, D.~Connolly, I.~Ridjan, B.~V.~Mathiesen,
+F.~Hvelplund, J.~Z.~Thellufsen y P.~Sorkn{\ae}s, ``Energy storage and smart energy
+systems,'' \emph{International Journal of Sustainable Energy Planning and Management},
+vol.~11, pp.~3--14, 2016. doi:10.5278/ijsepm.2016.11.2.
 \end{thebibliography}
 
 \vspace{1em}
 \noindent\small\textit{Reproducibilidad: el c\'odigo fuente MATLAB, las tablas CSV y las
-figuras de este reporte se encuentran en \texttt{ejecucion/repo/propuesta\_tecnica/}
-(m\'odulos \texttt{matlab/}, \texttt{resultados/} y \texttt{reporte/}). Ejecutar
-\texttt{main\_renon} reproduce todos los resultados (semillas fijas).}
+figuras de este reporte se encuentran en \texttt{code/analysis/propuesta\_tecnica/} del
+repositorio \url{https://github.com/ismael-minchala/renon-azuay} (carpetas \texttt{matlab/},
+\texttt{resultados/} y \texttt{reporte/}). Ejecutar \texttt{reproduce\_report\_v1} (o
+\texttt{matlab/main\_renon}) reproduce todos los resultados con semillas fijas; las pruebas
+de regresi\'on est\'an en \texttt{tests/}.}
 
 \end{document}
